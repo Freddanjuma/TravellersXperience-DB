@@ -31,3 +31,44 @@ Schema definition is in [`schema.sql`](./schema.sql).
 ```bash
 git clone https://github.com/Freddanjuma/TravellersXperience-DB.git
 cd TravellersXperience-DB
+
+*******************************************************************************************
+*******************************************************************************************
+///////////////////////////////////////////////////////////////////////////////////////////
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+                        # 🌍 TravellersXperience_DB
+
+A relational database schema for **TravellersXperience.com**, designed to power a travel booking platform with **users, destinations, bookings, payments, reviews, and admin management**.  
+
+This project is ideal for learning **SQL, relationships, and database-driven application development**.
+
+---
+
+## ✨ Features
+- 👤 **Users** – travelers who register and book trips  
+- 🏝️ **Destinations** – curated travel spots with details & pricing  
+- 📅 **Bookings** – links users with destinations  
+- 💳 **Payments** – track booking payments  
+- ⭐ **Reviews** – user feedback for destinations  
+- 🛠️ **Admin Management** – admins, managers, and support staff  
+
+---
+
+## 🔮 Vision & Impact
+Our goal is to build a **scalable and realistic travel booking database** that can easily integrate with **web and mobile apps**.  
+
+**Impact**:  
+- Helps developers learn **real-world database design**  
+- Enables quick prototyping of **travel booking apps**  
+- Encourages **collaboration** by extending the schema with analytics, offers, notifications, etc.  
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/Freddanjuma/TravellersXperience-DB.git
+cd TravellersXperience-DB
