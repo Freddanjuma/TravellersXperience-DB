@@ -54,3 +54,49 @@ CREATE TABLE admin (
     role ENUM('superadmin','manager','support') DEFAULT 'support',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+-- Travel Packages
+CREATE TABLE packages (
+    package_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description TEXT,
+    price DECIMAL(10,2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Itineraries (linked to bookings)
+CREATE TABLE itineraries (
+    itinerary_id INT AUTO_INCREMENT PRIMARY KEY,
+    booking_id INT,
+    day_number INT NOT NULL,
+    activity VARCHAR(255),
+    FOREIGN KEY (booking_id) REFERENCES bookings(booking_id)
+);
+
+-- Messages (support system)
+CREATE TABLE messages (
+    message_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    admin_id INT,
+    message TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(user_id),
+    FOREIGN KEY (admin_id) REFERENCES admins(admin_id)
+);
+
+-- Notifications
+CREATE TABLE notifications (
+    notification_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    message VARCHAR(255) NOT NULL,
+    is_read BOOLEAN DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
+);
+
+-- Loyalty Points
+CREATE TABLE loyalty_points (
+    user_id INT PRIMARY KEY,
+    points INT DEFAULT 0,
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
+);
