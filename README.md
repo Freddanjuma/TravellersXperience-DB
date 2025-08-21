@@ -14,7 +14,7 @@ This project defines the database schema for handling **users, bookings, destina
 **The vision of TravellersXperience is to become **every traveler’s backup plan** a trusted resource where users can plan, book, and manage their travel experiences with confidence.  
 By building a scalable and well-structured database, we ensure reliable storage and smooth access to vital travel information.  
 This database will power the platform’s **global growth**, helping millions of travelers connect to experiences effortlessly.
-And also, Our goal is to build a **scalable and realistic travel booking database** that can easily integrate with **web and mobile apps**. 
+And also, Our goal is to build a **scalable and realistic travel booking database** that can easily integrate with **web and mobile apps**.**
 ---
                          **IMPACTS**:
 
